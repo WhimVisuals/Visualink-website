@@ -26,5 +26,5 @@ jobs:
             server: visualink.online
             username: ${{ secrets.FTP_USERNAME }}
             password: ${{ secrets.FPT_PASSWORD }}
-            local_dir: ./web/
+            local-dir: ./web/
 
