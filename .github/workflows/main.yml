@@ -23,8 +23,8 @@ jobs:
       - name: FTP-Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with: 
-            ftp_server: visualink.online
-            ftp_username: ${{ secrets.FTP_USERNAME }}
-            ftp_password: ${{ secrets.FPT_PASSWORD }}
-            LOCAL_DIR: ./web/
+            server: visualink.online
+            username: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FPT_PASSWORD }}
+            local_dir: ./web/
 
