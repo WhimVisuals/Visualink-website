@@ -21,11 +21,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: FTP-Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: airvzxf/ftp-deployment-action@latest
         with: 
             server: ${{ secrets.FTP_SERVER }}
-            username: ${{ secrets.FTP_USERNAME }}
+            user: ${{ secrets.FTP_USERNAME }}
             password: ${{ secrets.FTP_USERNAME }}
-
+            remote_dir: "./web"
             
 
